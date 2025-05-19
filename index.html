@@ -66,8 +66,6 @@
       margin-top: 20px;
       cursor: pointer;
       transition: background-color 0.3s;
-      
-      /* ये लाइन जोड़िए */
       animation: pop 1.5s ease-in-out infinite;
     }
 
@@ -105,13 +103,31 @@
       }
     }
 
-    /* Popup animation keyframes */
     @keyframes pop {
       0% { transform: scale(1); }
       50% { transform: scale(1.2); }
       100% { transform: scale(1); }
     }
   </style>
+
+ <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4112936698972515');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4112936698972515&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
 <body>
   <h1>👑 AKBAR CRICKET REPORTER 👑</h1>
@@ -125,7 +141,5 @@
   <a href="https://t.me/+B2mTvw1MugowZTE1" target="_blank" class="btn" id="subscribeBtn">SUBSCRIBE NOW 🚀</a>
 
   <p class="disclaimer">Disclaimer: only for audience of age 18 years & above</p>
-
-  <!-- अब कोई JS नहीं चाहिए -->
 </body>
 </html>
